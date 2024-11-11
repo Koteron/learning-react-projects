@@ -1,0 +1,107 @@
+body{
+  background-color: hsl(0,0%,10%);
+}
+
+.fetcher-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow-y: auto;
+}
+
+.input-container input {
+  height: 100%;
+  width: 80%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  font-family: Arial, sans-serif;
+  font-size: 2.5em;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-overflow: ellipsis;
+  background: transparent;
+  border: none;
+
+}
+
+.input-container input:focus { outline: none; }
+
+
+
+h1{
+  font-size: 4em;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.input-container {
+  height: 65px;
+  width: 55%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.input-container-active {
+  box-shadow: inset 0 0 0 2px hsla(251, 79%, 30%, 0.762);
+}
+
+
+.input-container button {
+  position: absolute;
+  right: 15px;
+  font-size: 2.5em;
+  border: none;
+  border-radius: 25px;
+  background-color: transparent;
+  cursor: pointer;
+  background-color: hsla(0,0%,0%,0%);
+  transition: background-color 1s ease;
+}
+
+.input-container button:hover {
+  background-color: hsla(0,0%,0%,15%);
+}
+
+.fetched-info-container {
+  max-height: 90vh;
+  overflow-y: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+#error-message {
+  display: none;
+  color: rgb(167, 35, 35);
+  font-size: 2em;
+  margin-bottom: 0;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bolder;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 8px #e60000, 0 0 12px #e60000, 0 0 15px #e60000, 0 0 19px #e60000, 0 0 23px #e60000;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 8px #ff4d4d, 0 0 12px #ff4d4d, 0 0 15px #ff4d4d, 0 0 19px #ff4d4d, 0 0 23px #ff4d4d, 0 0 28px #ff4d4d;
+  }
+}
+
+#clear-button {
+  right: 70px;
+}

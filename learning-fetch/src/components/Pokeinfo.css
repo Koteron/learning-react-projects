@@ -1,0 +1,29 @@
+.pokemon-container{
+    display: flex;
+    flex-direction: row;
+    color:white;
+    border: 5px white solid;
+    border-radius: 30px;
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 100%;
+}
+
+.pokemon-container img {
+    border: 5px hsl(0, 0%, 100%) solid;
+    border-radius: 30px;
+    margin-right: 15px;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.pokemon-container h2 {
+    margin-top: 0;
+}
+
+.info-container {
+    margin-left: 30px;
+    white-space: nowrap;
+    margin-right: 30px;
+}
